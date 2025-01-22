@@ -4,13 +4,13 @@
     .nav {
         position: relative;
         width: 100%;
-        padding: 10px 25px 0px;
+        padding: 10px 25px 10px;
 
         box-sizing: border-box;
     }
 }
 
-@media screen and (max-width:830px) {
+@media screen and (max-width:900px) {
     .nav .left img:first-child {
         display: none;
     }
