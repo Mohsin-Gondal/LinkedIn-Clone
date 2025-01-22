@@ -1,0 +1,98 @@
+/* Header Styling */
+/* Left of Header Styling */
+.nav {
+    /* It's the Header*/
+    width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 15vw; */
+
+    margin: 0px auto 0px;
+    padding: 10px 0px 0px;
+
+    box-sizing: border-box;
+}
+
+/* Header == .nav */
+/* Left Header styling */
+.nav .left {
+    width: auto;
+}
+
+.nav .left img {
+    width: 100px;
+}
+
+/* Header Right Styling */
+.nav .right {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav .right>img {
+    display: none;
+    width: 33px;
+}
+/* Navigation Items Styling */
+.nav-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Signle Flex Item Styling */
+.nav-item {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* padding: 20px; */
+}
+
+/* Signle Icon Styling*/
+.icon {
+    color: rgb(119, 119, 119);
+
+    width: fit-content;
+    height: auto;
+    padding: 0px 20px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+    transition: 300ms;
+}
+
+.icon:hover {
+    color: black;
+}
+
+.nav-item:last-child .icon {
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    min-width: 70px;
+}
+/* The Actual Icon (SVG) */
+.icon svg {
+    width: 22px;
+    margin: auto;
+}
+
+.icon p {
+    font-size: 13px;
+    font-weight: 400;
+}
+/* Login Signup Buttons Div */
+.login-signup-buttons {
+    width: fit-content;
+    padding: 0px 10px 0px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}

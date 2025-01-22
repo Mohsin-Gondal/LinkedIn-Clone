@@ -1,0 +1,28 @@
+
+.btn {
+    text-wrap: nowrap;
+    padding: 15px 30px;
+    border-radius: 5em;
+    border: 1px solid transparent;
+    font-size: medium;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    color: rgb(104, 104, 104);
+    background-color: white;
+    transition: 300ms;
+    cursor: pointer;
+
+}
+
+.sec-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.prim-btn {
+    color: var(--dull-accent-color);
+    border: 1px solid var(--dull-accent-color);
+}
+
+.prim-btn:hover {
+    background-color: rgb(245, 246, 255);
+}
