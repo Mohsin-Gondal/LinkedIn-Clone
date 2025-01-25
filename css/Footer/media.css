@@ -1,14 +1,2 @@
 @media screen and (max-width:1000px) {}
-.footer-top {
-    flex-direction: column;
-}
-
-@media screen and (max-width:800px) {
-    .footer-top .footer-links-div {
-        flex-direction: column;
-        gap: 9px;
-    }
-    .footer-links-div>div>ul {
-        gap: 9px;
-    }
-}
+@media screen and (max-width:800px) {}
