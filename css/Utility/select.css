@@ -1,0 +1,115 @@
+.display_none {
+    display: none;
+}
+
+#select {
+
+    height: 40px;
+    background-color: white;
+    color: rgb(119, 119, 119);
+    border-radius: 5px;
+    border: 1px solid rgb(219, 219, 219);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    box-sizing: border-box;
+    padding: 15px;
+
+    font-family: "Roboto", serif;
+
+    transition: 300ms;
+    cursor: pointer;
+
+    position: relative;
+}
+
+#select:hover {
+    border-color: rgb(134, 134, 134);
+    color: rgb(134, 134, 134);
+}
+
+#select>p {
+    font-size: 16px;
+}
+
+.options {
+    background-color: white;
+
+    position: absolute;
+    bottom: -285px;
+    /* margin-top: 5px; */
+    padding: 10px;
+    border: 1px solid rgb(219, 219, 219);
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-height: 300px;
+    width: 95%;
+    overflow-y: auto;
+
+    display: none;
+}
+
+.options::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(235, 235, 235);
+}
+
+.options::-webkit-scrollbar-thumb {
+    background-color: rgb(190, 190, 190);
+    border-radius: 10px;
+}
+
+.option {
+
+    font-size: 12px;
+    font-family: "Roboto", serif;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 5px;
+
+    border-radius: 4px;
+
+    color: rgb(134, 134, 134);
+
+    transition: 300ms;
+    cursor: pointer;
+
+
+}
+
+.option:hover {
+    background-color: rgb(235, 235, 235);
+
+}
+
+.option p {
+    font-size: 16px;
+    margin: 0px;
+    padding: 3px 3px;
+}
+
+.option p:first-child {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(70, 70, 70);
+}
+
+.option p:last-child {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#select:hover~.options {
+    display: flex;
+}
+
+.options:hover {
+    display: flex;
+}
