@@ -48,4 +48,8 @@
     .nav .right .nav-items {
         overflow: auto auto;
     }
+    .login-signup-buttons {
+        padding: 0px;
+        flex-wrap: wrap;
+    }
 }
