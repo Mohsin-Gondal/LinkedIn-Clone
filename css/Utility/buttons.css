@@ -57,5 +57,21 @@
 .btn-outline-long-sec:hover {
     background-color: var(--secondary-color);
 }
-@media screen and (max-width:400px) {
+
+.single-svg-btn{
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
+.primary-outline-btn{
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--dull-accent-color);
+    
+    padding: 7px 12px;
+}
+.primary-outline-btn:hover{
+    background-color: #dcebff;
+}
+
