@@ -1,12 +1,18 @@
 @media screen and (max-width:1200px) {
     .footer-bottom-grid{
-        padding: 2em 1rem 2rem;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2rem 0rem 2rem;
     
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2,40%);
         grid-template-rows: auto;
     
         row-gap: 15px;
-    
+        
+        padding-left: 1rem;
+        li{
+            width: 50%;
+        }
     }
     .footer-top-inner-cover img{
         margin-right: 20px;
