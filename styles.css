@@ -125,6 +125,7 @@
     flex-direction: column;
     gap: 5px;
 }
+
 @media screen and (max-width:600px) {
    .pop-up-card{
     display: none;
