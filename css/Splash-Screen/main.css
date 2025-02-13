@@ -1,7 +1,11 @@
-body {
-    background-color: #F4F2EE;
-}
+.splash_wrapper{
+    position: absolute;
+    background-color: #f4f2ee;
+    height: 100%;
+    width: 100%;
 
+    z-index: 10;
+}
 .main {
     margin-top: 120px;
     height: 100%;

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/Base/root.css">
     <link rel="stylesheet" href="css/Utility/buttons.css">
     <link rel="stylesheet" href="css/Utility/select.css">
+    <link rel="stylesheet" href="css/Utility/util.css">
     <link rel="stylesheet" href="css/Header/main.css">
     <link rel="stylesheet" href="css/Header/media.css">
     <link rel="stylesheet" href="css/Hero Section/main.css">
@@ -18,6 +19,8 @@
     <link rel="stylesheet" href="css/Home-Sections/media.css">
     <link rel="stylesheet" href="css/Footer/main.css">
     <link rel="stylesheet" href="css/Footer/media.css">
+    <link rel="stylesheet" href="css/Splash-Screen/main.css">
+    <link rel="stylesheet" href="css/Splash-Screen/animation.css">
 
     <!-- Buffer CSS File -->
     <link rel="stylesheet" href="styles.css">
@@ -27,7 +30,17 @@
     <title>LinkedIn</title>
 </head>
 
-<body>
+<body class="overflow-hidden">
+    <div class="splash_wrapper">
+        <div class="main">
+            <img src="img/logo1.png" alt="logo">
+            <div class="fill-bar">
+                <div class="slider">
+
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="nav">
         <div class="left">
             <img src="img/logo1.png" alt="logo">
@@ -993,7 +1006,7 @@
                 <li><a href="#">Community Guidelines</a></li>
                 <li>
                     <select name="language" id="dis-lang">
-                        
+
                     </select>
                 </li>
             </ul>
@@ -1001,6 +1014,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/splash.js"></script>
     <script src="js/select.js"></script>
     <script src="js/home-pops.js"></script>
     <script src="js/countries.js"></script>
