@@ -55,6 +55,12 @@
     #error-svg {
         display: none;
     }
+    #success-svg {
+        display: none;
+    }
+    #info-svg {
+        display: none;
+    }
 }
 
 .error {
@@ -67,6 +73,50 @@
     border: 2px solid #F5C6CB;
 
     #warning-svg {
+        display: none;
+    }
+    #success-svg {
+        display: none;
+    }
+    #info-svg {
+        display: none;
+    }
+}
+.info {
+    background-color: #D1ECF1;
+    color: #0C5460;
+    fill: #17A2B8;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    border: 2px solid #BEE5EB;
+
+    #warning-svg {
+        display: none;
+    }
+    #success-svg {
+        display: none;
+    }
+    #error-svg {
+        display: none;
+    }
+}
+.success {
+    background-color: 	#D4EDDA;
+    color: #155724;
+    fill: #28A745;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    border: 2px solid #C3E6CB;
+
+    #warning-svg {
+        display: none;
+    }
+    #info-svg {
+        display: none;
+    }
+    #error-svg {
         display: none;
     }
 }
