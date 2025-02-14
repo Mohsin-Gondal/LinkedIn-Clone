@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/Base/reset.css">
     <link rel="stylesheet" href="css/Base/root.css">
     <link rel="stylesheet" href="css/Utility/buttons.css">
+    <link rel="stylesheet" href="css/Utility/msg.css">
+    <link rel="stylesheet" href="css/Footer/main.css">
+    <link rel="stylesheet" href="css/Footer/media.css">
     <link rel="stylesheet" href="css/Utility/select.css">
     <link rel="stylesheet" href="css/Utility/checkbox.css">
     <link rel="stylesheet" href="css/Utility/util.css">
-    <link rel="stylesheet" href="css/Footer/main.css">
-    <link rel="stylesheet" href="css/Footer/media.css">
     <!-- <link rel="stylesheet" href="css/Login-Signup/signup.css"> -->
     <link rel="stylesheet" href="css/Login-Signup/login.css">
 
@@ -28,6 +29,12 @@
 </head>
 
 <body>
+    <div class="msg-popup warning display-none">
+        <svg id="warning-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+        <svg id="error-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+        <p>Error MSG</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+    </div>
     <div class="splash_wrapper">
         <div class="main">
             <img src="img/logo1.png" alt="logo">
@@ -46,6 +53,7 @@
         </div>
     </header>
     <main>
+
         <div class="login-card">
             <h2>Sign In</h2>
             <p>Stay updated on your professional world.</p>
@@ -58,7 +66,6 @@
                     <label for="password">Enter Password</label>
                     <input type="password" name="password" id="password">
                 </div>
-
             </div>
             <a class="forget-passsord-link" href="#">Forget password?</a>
             <div class="check-box">
@@ -71,7 +78,7 @@
                 </div>
                 <p class="context">Keep me logged in</p>
             </div>
-            <button class="btn btn-outline-long-prim">Sign in</button>
+            <button class="btn btn-outline-long-prim" id="sign-in-btn">Sign in</button>
             <div class="divider">
                 <div class="left">
                 </div>
@@ -114,7 +121,6 @@
         <p class="new_to_li">New to LinkedIn? <a class="forget-passsord-link" href="#">Join now</a></p>
     </main>
     <footer>
-
         <div class="footer-bottom">
             <ul class="footer-bottom-grid">
                 <li><a href="#"><img src="img/logo1.png" alt="logo" width="60"> <span>&copy2025</span></a></li>
@@ -136,27 +142,14 @@
 
         </div>
     </footer>
-    <script>
-        let inputs_div = document.querySelector('.inputs');
-        let inputs_count = inputs_div.childElementCount;
-        for (let index = 1; index <= inputs_count; index++) {
-            let input = document.querySelector(`.input-${index}`);
-            input.addEventListener('click', () => {
-                console.log(input);
-                input.querySelector('label').setAttribute('id', 'input-focused');
 
-            });
-
-            input.querySelector('input').addEventListener('focusout', () => {
-                input.querySelector('label').removeAttribute('id');
-            })
-        }
-
-    </script>
     <script src="js/checkbox.js"></script>
     <script src="js/splash.js"></script>
     <script src="js/countries.js"></script>
     <script src="js/language.js"></script>
+    <script src="js/dynaput.js"></script>
+    <script src="js/page-links.js"></script>
+    <script src="js/valid-in.js"></script>
 </body>
 
 </html>

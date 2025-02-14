@@ -47,17 +47,19 @@ main {
     font-size: 2rem;
     font-weight: 500;
 }
-.login-card h2~p{
+
+.login-card h2~p {
     font-size: 14px;
     justify-self: start;
 }
-.inputs{
+
+.inputs {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.input{
+.input {
     position: relative;
     padding: 3px 10px;
     padding-bottom: 7px;
@@ -67,7 +69,7 @@ main {
     display: flex;
     flex-direction: column;
 
-    label{
+    label {
         color: rgb(104, 104, 104);
         font-size: 17px;
         font-weight: 300;
@@ -76,7 +78,8 @@ main {
         position: absolute;
         top: 28%;
     }
-    input{
+
+    input {
         padding: 1px 1px;
         height: 40px;
         font-size: 16px;
@@ -85,32 +88,38 @@ main {
         outline: none;
         border: none;
         background-color: transparent;
-        font-family: "Roboto",serif;
+        font-family: "Roboto", serif;
     }
+
     cursor: pointer;
 }
-#input-focused{
+
+#input-focused {
     top: 8%;
     font-size: 12px;
     font-weight: 500;
 }
 
-.new_to_li{
+.new_to_li {
     font-weight: 400;
     padding-top: 30px;
 }
+
 .forget-passsord-link {
     font-weight: 500;
     color: #0a66c2;
     font-size: 0.9rem;
 }
-.check-box{
+
+.check-box {
     /* margin-top: 10px; */
 }
-.box-checked{
+
+.box-checked {
     background-color: #0a66c2;
     border-color: #0a66c2;
 }
+
 .btn-outline-long-prim {
     /* margin-top: 13px; */
     padding-top: 13px;
@@ -176,4 +185,76 @@ main .login-card .pri-policy-disclaimer {
         height: 20px;
     }
 
+}
+
+.msg-popup {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    height: 50px;
+    width: 350px;
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 15px rgb(207, 207, 207);
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 0px 15px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    p{
+        flex-grow: 1;
+    }
+    svg {
+        width: 30px;
+    }
+
+    svg:last-child {
+        width: 15px;
+        transition: 300ms;
+        /* justify-self: flex-end; */
+    }
+
+    svg:last-child:hover {
+        border-color: #856404;
+        transform:scale(1.1);
+    }
+
+    cursor: pointer;
+}
+
+.warning {
+    background-color: #FFF3CD;
+    color: #856404;
+    fill: #856404;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    border: 2px solid #FFEEBA;
+
+    #error-svg {
+        display: none;
+    }
+}
+
+.error {
+    background-color: #F8D7DA;
+    color: #721C24;
+    fill: #721C24;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    border: 2px solid #F5C6CB;
+
+    #warning-svg {
+        display: none;
+    }
 }
