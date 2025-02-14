@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="css/Utility/util.css">
     <link rel="stylesheet" href="css/Footer/main.css">
     <link rel="stylesheet" href="css/Footer/media.css">
-    <link rel="stylesheet" href="css/Login-Signup/signup.css">
+    <!-- <link rel="stylesheet" href="css/Login-Signup/signup.css"> -->
+    <link rel="stylesheet" href="css/Login-Signup/login.css">
 
     <!-- Splash Screen CSS \/ -->
     <link rel="stylesheet" href="css/Splash-Screen/main.css">
@@ -22,7 +23,7 @@
     <!-- Splash Screen CSS /\ -->
 
     <!-- SCC Files /\ -->
-    <title>Sign Up | LinkedIn</title>
+    <title>LinkedIn Login, Signin | LinkedIn</title>
     <link rel="icon" href="img/logo.png">
 </head>
 
@@ -38,27 +39,28 @@
         </div>
     </div>
     <header>
-        <div class="header-wrapper">
-            <img src="img/logo1.png" alt="logo">
-            <div class="right-of-header">
 
-            </div>
+        <img src="img/logo1.png" alt="logo" width="150px">
+        <div class="right-of-header">
+
         </div>
     </header>
     <main>
-        <p>Make the Most of Your Professional Life</p>
-        <form id="signup-form" action="noaction.php">
+        <div class="login-card">
+            <h2>Sign In</h2>
+            <p>Stay updated on your professional world.</p>
             <div class="inputs">
-                <label for="email">
-                    <p>Email</p>
-                    <input type="email" id="email" name="email">
-                </label>
-
-                <label for="password">
-                    <p>Password</p>
+                <div class="input input-1" tabindex="1">
+                    <label for="email">Email or Phone</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="input input-2" tabindex="1">
+                    <label for="password">Enter Password</label>
                     <input type="password" name="password" id="password">
-                </label>
+                </div>
+
             </div>
+            <a class="forget-passsord-link" href="#">Forget password?</a>
             <div class="check-box">
                 <div class="box" tabindex="1">
                     <svg xmlns="http://www.w3.org/2000/svg"
@@ -67,11 +69,9 @@
                             d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
                     </svg>
                 </div>
-                <p class="context">Remember me</p>
+                <p class="context">Keep me logged in</p>
             </div>
-            <p>By clicking Agree & Join or Continue, you agree to the LinkedIn <a href="#">User Agreement</a>, <a href="#">Privacy Policy</a>, and
-                <a href="#">Cookie Policy</a>.</p>
-            <button class="btn btn-outline-long-prim">Agree & Join</button>
+            <button class="btn btn-outline-long-prim">Sign in</button>
             <div class="divider">
                 <div class="left">
                 </div>
@@ -80,20 +80,38 @@
 
                 </div>
             </div>
+            <p class="pri-policy-disclaimer">By clicking Continue, you agree to LinkedIn's <a href="#">User
+                    Agreement</a>, <a href="#">Privacy Policy</a>, and
+                <a href="#">Cookie Policy</a>.
+            </p>
             <div class="buttons">
                 <button class="btn btn-outline-long-sec">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="LgbsSe-Bz112c"><g><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path><path fill="none" d="M0 0h48v48H0z"></path></g></svg>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="LgbsSe-Bz112c">
+                        <g>
+                            <path fill="#EA4335"
+                                d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z">
+                            </path>
+                            <path fill="#4285F4"
+                                d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z">
+                            </path>
+                            <path fill="#FBBC05"
+                                d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z">
+                            </path>
+                            <path fill="#34A853"
+                                d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z">
+                            </path>
+                            <path fill="none" d="M0 0h48v48H0z"></path>
+                        </g>
+                    </svg>
                     Continue with Google
                 </button>
                 <button class="btn btn-outline-long-sec">
-                   <img src="img/ms-logo.png" alt="logo">
+                    <img src="img/ms-logo.png" alt="logo">
                     Continue with Microsoft
                 </button>
             </div>
-            <p class="outer-text">Already on LinkedIn? <a class="inner-link" href="#">Sign in</a></p>
-
-        </form>
-        <p class="outer-text">Looking to create a page for a business? <a href="#" class="inner-link">Get help</a></p>
+        </div>
+        <p class="new_to_li">New to LinkedIn? <a class="forget-passsord-link" href="#">Join now</a></p>
     </main>
     <footer>
 
@@ -118,6 +136,23 @@
 
         </div>
     </footer>
+    <script>
+        let inputs_div = document.querySelector('.inputs');
+        let inputs_count = inputs_div.childElementCount;
+        for (let index = 1; index <= inputs_count; index++) {
+            let input = document.querySelector(`.input-${index}`);
+            input.addEventListener('click', () => {
+                console.log(input);
+                input.querySelector('label').setAttribute('id', 'input-focused');
+
+            });
+
+            input.querySelector('input').addEventListener('focusout', () => {
+                input.querySelector('label').removeAttribute('id');
+            })
+        }
+
+    </script>
     <script src="js/checkbox.js"></script>
     <script src="js/splash.js"></script>
     <script src="js/countries.js"></script>
