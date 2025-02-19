@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Files \/ -->
+    <link rel="stylesheet" href="css/Base/typography.css">
+    <link rel="stylesheet" href="css/Base/reset.css">
+    <link rel="stylesheet" href="css/Base/root.css">
+    <link rel="stylesheet" href="css/Utility/buttons.css">
+    <link rel="stylesheet" href="css/Utility/msg.css">
+    <link rel="stylesheet" href="css/Footer/main.css">
+    <link rel="stylesheet" href="css/Footer/media.css">
+    <link rel="stylesheet" href="css/Utility/select.css">
+    <link rel="stylesheet" href="css/Utility/checkbox.css">
+    <link rel="stylesheet" href="css/Utility/util.css">
+    <link rel="stylesheet" href="css/Feed/header.css">
+    <link rel="stylesheet" href="css/Feed/main.css">
+    <link rel="stylesheet" href="css/Feed/media.css">
+
+    <!-- Splash Screen CSS \/ -->
+    <link rel="stylesheet" href="css/Splash-Screen/main.css">
+    <link rel="stylesheet" href="css/Splash-Screen/animation.css">
+    <!-- Splash Screen CSS /\ -->
+
+    <!-- SCC Files /\ -->
+    <title>Feed | LinkedIn</title>
+    <link rel="icon" href="img/logo.png">
+
+    <!-- Font Awesome CDN -->
+
+
+</head>
+
+<body>
+    <div class="msg-popup" id="display-none">
+        <svg id="warning-svg" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+                d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" />
+        </svg>
+        <svg id="error-svg" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+        </svg>
+        <svg id="success-svg" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+        </svg>
+        <svg id="info-svg" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+        </svg>
+        <p>Error MSG</p>
+        <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+        </svg>
+    </div>
+    <div class="splash_wrapper">
+        <div class="main">
+            <img src="img/logo1.png" alt="logo">
+            <div class="fill-bar">
+                <div class="slider">
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="left-most-items">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                    fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                    <path
+                        d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                    </path>
+                </svg>
+                <div class="icon" id="search-icon-div">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                        </path>
+                    </svg>
+                    <p>Search</p>
+                </div>
+                <div class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+            </div>
+            <div class="icons-box">
+                <div class="icons">
+                    <div class="icon icon-active">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                            fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z">
+                            </path>
+                        </svg>
+                        <p>Home</p>
+                    </div>
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                            fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path
+                                d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z">
+                            </path>
+                        </svg>
+                        <p>My Network</p>
+                    </div>
+                    <div class="icon" id="job-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                            fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path
+                                d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z">
+                            </path>
+                        </svg>
+                        <p>Jobs</p>
+                    </div>
+                    <div class="icon" id="message-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                            fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path
+                                d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z">
+                            </path>
+                        </svg>
+                        <p>Messaging</p>
+                    </div>
+                    <div class="icon" id="notifications-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                            fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path
+                                d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z">
+                            </path>
+                        </svg>
+                        <p>Notifications</p>
+                    </div>
+                    <div class="icon" id="account-icon">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D35AQHiPgDfpaShWg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1738264874586?e=1740553200&v=beta&t=X3Eu1vJoiQs2F3ChWwjI_vuZveEgCYuYGpqVnr78p8U"
+                            alt="logo">
+                        <div class="account-me">
+                            <p>Me</p>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="right-most-icons">
+                    <div class="icon" id="account-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                            fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path
+                                d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z">
+                            </path>
+                        </svg>
+                        <div class="account-me">
+                            <p>For Business</p>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <img src="img/so_called_prem.png" alt="prem">
+                        <p>Try Premium for 0 PKR</p>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="inner-main">
+            <div class="main-left">
+                <div class="left-main-card">
+                    <img src="img/svg/gray-white.svg" alt="img">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D35AQHiPgDfpaShWg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1738264874586?e=1740585600&v=beta&t=ITIYvk9LvyrJi8n6kL4w2znL_DS16i445ZUi9f2ydX8"
+                        alt="profile">
+                    <div class="info">
+                        <h2>Mohsin Raza</h2>
+                        <p class="title">JaveEE Developer</p>
+                        <p class="address">Mandi Bahauddin,Tehsil Punjab</p>
+                        <div class="allumini">
+                            <img src="https://media.licdn.com/dms/image/v2/C560BAQE3AQLwkx77ZQ/company-logo_100_100/company-logo_100_100/0/1630565967428?e=1747872000&v=beta&t=KwGYmpIWjJHFW2r3tMgUVEz1f-DhhNzEX_ZI8ieOWm8"
+                                alt="lumini-logo">
+                            <p class="alumini-name">University of Gujrat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-sec-card">
+                    <p>Connections</p>
+                    <p>24</p>
+                    <p>Conncet with alumni</p>
+
+                </div>
+                <div class="left-sec-card-2">
+                    <p>Acheice 4x more profile visits</p>
+                    <p>
+                        <img src="img/so_called_prem.png" alt="prem">
+                        Try Premium for PKR 0
+                    </p>
+                </div>
+                <div class="left-last-card">
+                    <div class="item">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z" />
+                        </svg>
+                        <p>Saved Items</p>
+                    </div>
+                    <div class="item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M2.5 7C2.5 9.20914 4.29086 11 6.5 11C8.70914 11 10.5 9.20914 10.5 7C10.5 4.79086 8.70914 3 6.5 3C4.29086 3 2.5 4.79086 2.5 7ZM2 21V16.5C2 14.0147 4.01472 12 6.5 12C8.98528 12 11 14.0147 11 16.5V21H2ZM17.5 11C15.2909 11 13.5 9.20914 13.5 7C13.5 4.79086 15.2909 3 17.5 3C19.7091 3 21.5 4.79086 21.5 7C21.5 9.20914 19.7091 11 17.5 11ZM13 21V16.5C13 14.0147 15.0147 12 17.5 12C19.9853 12 22 14.0147 22 16.5V21H13Z">
+                            </path>
+                        </svg>
+                        <p>Groups</p>
+                    </div>
+                    <div class="item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9V3H15V1H17V3ZM4 9V19H20V9H4ZM6 13H11V17H6V13Z">
+                            </path>
+                        </svg>
+                        <p>Events</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-center">
+
+            </div>
+            <div class="main-right">
+                <div class="right-main-card">
+                    <div class="head">
+                        <p>Today's puzzle games</p>
+                    </div>
+                    <div class="content">
+                        <div class="game">
+                            <img src="" alt="">
+                            <div class="game-info">
+                                <p>Tango</p>
+                                <p>Harmorize the grid</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right-sec-card">
+
+                </div>
+                <div class="right-footer">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="js/checkbox.js"></script>
+    <script src="js/splash.js"></script>
+    <script src="js/msg.js"></script>
+</body>
+
+</html>
