@@ -1,6 +1,7 @@
 .inner-main {
     margin: 15px auto;
-    width: 1200px;
+    width: fit-content;
+    max-width: 1200px;
     height: 200vh;
     /* background-color: green; */
 
