@@ -1,0 +1,65 @@
+{
+    "posts": [
+      {
+        "postId": 101,
+        "userId": 1,
+        "username": "John Doe",
+        "profilePic": "https://randomuser.me/api/portraits/men/1.jpg",
+        "content": "Excited to share that I have started a new role at Google! 🚀",
+        "image": "https://source.unsplash.com/800x600/?tech,office",
+        "likes": 150,
+        "comments": [
+          {
+            "commentId": 201,
+            "userId": 2,
+            "username": "Jane Smith",
+            "profilePic": "https://randomuser.me/api/portraits/women/2.jpg",
+            "text": "Congratulations, John! Wishing you success in your new role. 🎉"
+          }
+        ],
+        "timestamp": "2025-02-25T10:30:00Z"
+      },
+      {
+        "postId": 102,
+        "userId": 2,
+        "username": "Jane Smith",
+        "profilePic": "https://randomuser.me/api/portraits/women/2.jpg",
+        "content": "Had an amazing time at the Product Management Summit 2025!",
+        "image": "https://source.unsplash.com/800x600/?conference,people",
+        "likes": 200,
+        "comments": [],
+        "timestamp": "2025-02-24T15:45:00Z"
+      },
+      {
+        "postId": 103,
+        "userId": 3,
+        "username": "Alice Johnson",
+        "profilePic": "https://randomuser.me/api/portraits/women/3.jpg",
+        "content": "Sketching out new UX ideas for the next-gen Apple Watch UI! 🎨",
+        "image": "https://source.unsplash.com/800x600/?design,sketch",
+        "likes": 180,
+        "comments": [
+          {
+            "commentId": 202,
+            "userId": 4,
+            "username": "Michael Brown",
+            "profilePic": "https://randomuser.me/api/portraits/men/4.jpg",
+            "text": "That looks incredible! Can’t wait to see the final design. 💡"
+          }
+        ],
+        "timestamp": "2025-02-23T09:20:00Z"
+      },
+      {
+        "postId": 104,
+        "userId": 4,
+        "username": "Michael Brown",
+        "profilePic": "https://randomuser.me/api/portraits/men/4.jpg",
+        "content": "AI is evolving rapidly! Just finished analyzing the latest ML models. 🤖",
+        "image": "https://source.unsplash.com/800x600/?ai,technology",
+        "likes": 220,
+        "comments": [],
+        "timestamp": "2025-02-22T14:50:00Z"
+      }
+    ]
+  }
+  

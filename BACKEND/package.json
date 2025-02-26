@@ -1,6 +1,24 @@
 {
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.21.2",
     "figlet": "^1.8.0"
-  }
+  },
+  "name": "linkedin-clone-be",
+  "version": "1.0.0",
+  "description": "Replica of LinkedIn Request Response Cycle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohsin-Gondal/LinkedIn-Clone.git"
+  },
+  "author": "Mohsin Raza Gondal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohsin-Gondal/LinkedIn-Clone/issues"
+  },
+  "homepage": "https://github.com/Mohsin-Gondal/LinkedIn-Clone#readme"
 }

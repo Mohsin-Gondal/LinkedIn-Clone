@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    height: 100%;
+}
+
+main {
+    box-sizing: border-box;
+    height: 100%;
+    /* background-color: green; */
+
+}
+
+.hero-section {
+    margin: auto;
+    padding: 5em 5em 0px;
+    
+    max-width: 1350px;
+
+    display: flex;
+    justify-content: space-between;
+    /* gap: 15rem; */
+
+    box-sizing: border-box;
+}
+
+.hero-left {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.hero-right{
+    width: 55%;
+}
+.hero-right>svg {
+    width: 100%;
+    position: relative;
+    /* left: 40%; */
+}
+.hero-main-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center ;
+
+    gap: 10px;
+}
+.hero-left p{
+    color: rgb(104, 104, 104);
+    font-size: calc(0.8rem);
+    width: 100%;
+    text-align:center;
+}
+.hero-left>p:first-child {
+    padding: 0px 0px 1rem;
+
+    font-size: calc(1.5rem + 1vw);
+
+    color: rgb(104, 104, 104);
+    text-align: start;
+}
+.hero-left>p:last-child{
+    font-size: calc(1rem);
+}
+.hero-left p > a{
+    color: var(--dull-accent-color);
+    font-weight: 500;
+}
+.hero-left p > a:hover{
+    text-decoration: underline;
+}
+
+
+.cont-with-user-btn {
+    /* padding: 2px; */
+
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.cont-with-user-btn .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cont-with-user-btn .left img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.cont-with-user-btn .center {
+    /* margin: 0px 14.5em 0em 10px; */
+    margin: 0px 0em 0em 10px;
+}
+
+.cont-with-user-btn .center p {
+    text-align: start;
+    color: white;
+}
+
+.cont-with-user-btn .right {
+    background-color: white;
+    padding: 0.3em;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 4px;
+}
+
+.cont-with-user-btn .right svg {
+    width: 20px;
+    height: auto;
+}

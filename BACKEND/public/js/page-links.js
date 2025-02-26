@@ -1,0 +1,1 @@
+let sign_up_link = '/signup.html';

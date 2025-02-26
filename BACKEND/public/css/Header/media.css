@@ -1,0 +1,55 @@
+
+/* Media Querries */
+@media screen and (max-width:1200px) {
+    .nav {
+        position: relative;
+        width: 100%;
+        padding: 10px 25px 10px;
+
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .nav .left img:first-child {
+        display: none;
+    }
+
+    .nav .right>img {
+        display: block;
+    }
+
+    .nav .right>img {
+        width: 25px;
+    }
+
+    .nav .right .nav-items {
+        order: 1;
+    }
+
+    .nav .right {
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        /* When we move to 560px Screen the navigation items get touched with signup login buttons so I'll add Gap here */
+        gap: 10px;
+        /* Now Good */
+
+    }
+
+}
+
+@media screen and (max-width:560px) {
+    .nav .right {
+        overflow: auto auto;
+        
+    }
+
+    .nav .right .nav-items {
+        overflow: auto auto;
+    }
+    .login-signup-buttons {
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+}
