@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const port = 8080;
 const DB_Data = require('./DB/users.json');
+app.use(express.urlencoded({ extended: true }));
 //Setting up EJS
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -14,9 +15,9 @@ app.listen(port, () => {
 app.get('/home', (req, res) => {
     res.render('home');
 });
-app.get('/pro', (req, res) => {
-    let { em: email, pass:password } = req.query;
-    let USER = findUserFromDB(email,DB_Data);
+app.post('/pro', (req, res) => {
+    let { em: email, pass: password } = req.body;
+    let USER = findUserFromDB(email, DB_Data);
     if (USER != {}) {
         if (USER.password == password) {
             res.render('feed', { USER });
