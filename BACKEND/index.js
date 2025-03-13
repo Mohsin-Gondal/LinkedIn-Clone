@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 const port = 8080;
 const DB_Data = require('./DB/users.json');
+const POSTS = require('./DB/posts.json');
+const SUGG_PROFs = require('./DB/suggestions.json');
 app.use(express.urlencoded({ extended: true }));
 //Setting up EJS
 app.set('view engine', 'ejs');
@@ -20,7 +22,7 @@ app.post('/pro', (req, res) => {
     let USER = findUserFromDB(email, DB_Data);
     if (USER != {}) {
         if (USER.password == password) {
-            res.render('feed', { USER });
+            res.render('feed', { USER, POSTS,SUGG_PROFs });
         } else {
             console.log("Password didn't match");
         }

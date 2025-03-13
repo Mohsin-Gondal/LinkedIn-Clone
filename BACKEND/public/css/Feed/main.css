@@ -501,6 +501,7 @@
         color: rgb(58, 58, 58);
         text-wrap: wrap;
         font-family: "Roboto", serif;
+        padding: 20px 0px;
     }
 }
 
@@ -682,6 +683,7 @@
 .right-sec-card {
     display: flex;
     flex-direction: column;
+    padding: 15px 10px;
 }
 
 .right-sec-card .head {
@@ -754,7 +756,8 @@
 }
 
 .recom-all {
-    padding: 3px 7px;
+    margin-top: 5px;
+    padding: 4px 7px;
     display: flex;
     align-items: center;
     justify-content: space-between;
