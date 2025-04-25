@@ -1,0 +1,55 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "password": "hashedpassword123",
+        "profilePic": "https://randomuser.me/api/portraits/men/1.jpg",
+        "headline": "Software Engineer at Google",
+        "location": "San Francisco, CA",
+        "connections": 500
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "janesmith@example.com",
+        "password": "hashedpassword456",
+        "profilePic": "https://randomuser.me/api/portraits/women/2.jpg",
+        "headline": "Product Manager at Meta",
+        "location": "New York, NY",
+        "connections": 350
+      },
+      {
+        "id": 3,
+        "name": "Alice Johnson",
+        "email": "alicej@example.com",
+        "password": "hashedpassword789",
+        "profilePic": "https://randomuser.me/api/portraits/women/3.jpg",
+        "headline": "UX Designer at Apple",
+        "location": "Los Angeles, CA",
+        "connections": 220
+      },
+      {
+        "id": 4,
+        "name": "Michael Brown",
+        "email": "michaelb@example.com",
+        "password": "hashedpassword101",
+        "profilePic": "https://randomuser.me/api/portraits/men/4.jpg",
+        "headline": "Data Scientist at Amazon",
+        "location": "Seattle, WA",
+        "connections": 410
+      },
+      {
+        "id": 5,
+        "name": "Emily Wilson",
+        "email": "emilyw@example.com",
+        "password": "hashedpassword202",
+        "profilePic": "https://randomuser.me/api/portraits/women/5.jpg",
+        "headline": "Marketing Manager at Tesla",
+        "location": "Austin, TX",
+        "connections": 275
+      }
+    ]
+  }
+  
