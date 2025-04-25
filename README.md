@@ -1,5 +1,2 @@
-**LinkedIn Clone**
-
-Clean and responsive UI mimicking LinkedIn’s core design
-
-**#HTML #CSS #JavaScript #FrontendDevelopment #WebDesign #PracticeProject #SoftwareEngineering #LearningByBuilding**
+#LinkedIn Replica
+(To Implement Whatever I learn About Backend & Frontend)
